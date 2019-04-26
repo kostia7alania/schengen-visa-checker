@@ -54,7 +54,7 @@ $strData = '__LASTFOCUS=&__EVENTTARGET=&__EVENTARGUMENT&__VIEWSTATE=/wEPDwUKMTY0
       die;*/
 
 
-include(__DIR__.'./Requests/library/Requests.php');
+include(__DIR__.'/Requests/library/Requests.php');
 Requests::register_autoloader();
 
 $response = Requests::post($url, $headers, $data);
