@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "copy-webpack-plugin": "^5.0.3",
     "lodash.camelcase": "^4.3.0",
     "vue-i18n": "^7.3.3",
     "vuex-persist": "^2.0.0"

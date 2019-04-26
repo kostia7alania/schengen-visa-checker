@@ -1,6 +1,10 @@
 // Configuration for your app
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 
 module.exports = function (ctx) {
+  const webpack = require('webpack')
+
   return {
     // app plugins (/src/plugins)
     plugins: [
@@ -31,8 +35,15 @@ module.exports = function (ctx) {
           test: /\.(js|vue)$/,
           //loader: 'eslint-loader',
           exclude: /node_modules/
-        })
-      }
+        }),
+console.log(cfg.module.plugins)
+        cfg.plugins.push(
+          new CopyWebpackPlugin(
+              [{ to: '1111111', from: 'vendor' }]
+           )
+        );
+
+      },
     },
     devServer: {
       // https: true,
