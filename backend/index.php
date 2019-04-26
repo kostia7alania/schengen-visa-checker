@@ -1,8 +1,7 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-include('./Requests/library/Requests.php');
-stRequests::register_autoloader();
-
+include(__DIR__.'./Requests/library/Requests.php');
+Requests::register_autoloader();
 $headers = [
     'Connection' => 'keep-alive',
     'Pragma' => 'no-cache',
