@@ -1,10 +1,8 @@
 <?php
-
-
 header("Access-Control-Allow-Origin: *");
-include(__DIR__.'vendor/rmccue/requests/library/Requests.php');
-
-//Requests::register_autoloader();
+include('./Requests/library/Requests.php');
+include('vendor/rmccue/requests/library/Requests.php');
+Requests::register_autoloader();
 
 $headers = [
     'Connection' => 'keep-alive',
