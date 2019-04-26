@@ -3,6 +3,8 @@
 
 header("Access-Control-Allow-Origin: *");
 include(__DIR__.'vendor/rmccue/requests/library/Requests.php');
+echo 1;
+die;
 Requests::register_autoloader();
 
 $headers = [
