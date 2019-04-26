@@ -3,5 +3,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/citypark/kostia7alania.ru/
+    - export DEPLOYPATH=/home/citypark/visa.kostia7alania.ru/
     - /bin/cp -R dist/spa-mat $DEPLOYPATH
