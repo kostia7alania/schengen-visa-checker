@@ -8,13 +8,16 @@ const vuexLocal = new VuexPersistence({ storage: window.localStorage })
 
 Vue.use(Vuex)
 
+import axios from "axios";
+window.axios = axios;
+
 /*
  * If not building with SSR mode, you can
  * directly export the Store instantiation
  */
 
 export default function (/* { ssrContext } */) {
-  const Store = new Vuex.Store({
+  window.Store = new Vuex.Store({
     plugins: [vuexLocal.plugin],
     modules
   })
